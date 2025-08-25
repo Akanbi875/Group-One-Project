@@ -1,11 +1,3 @@
-:root {
-    --accent: hsl(14, 45%, 36%);
-    --accent-bg: hsl(330, 100%, 98%);
-    --text: hsl(24, 5%, 18%);
-    --muted: hsl(30, 18%, 87%);
-    --list-dot: hsl(30, 54%, 70%);
-    --rule: hsl(30, 18%, 87%);
-}
 body {
     font-family: "outfit", sans-serif;
     background-color: hsl(30, 54%, 90%);
@@ -20,7 +12,7 @@ body {
 .test {
     background-color: hsl(0, 0%, 100%);
     width: 50%;
-    max-width: 700px;
+    max-width: 700px;  
     margin: 70px auto;
     padding: 40px;
     border-radius: 14px;
@@ -50,7 +42,7 @@ section div:nth-of-type(5) {
     padding-bottom: 5px;
 }
   .prep{
-      background:var(--accent-bg);
+      background:hsl(330, 100%, 98%);
       border-radius: 14px;
       padding: 18px 22px;
       margin: 26px 0;
@@ -62,15 +54,15 @@ section div:nth-of-type(5) {
       font-weight:700;
     }
     .prep ul{margin:0; padding-left: 20px;}
-    .prep li{padding:6px 25px; color:var(--text);}
-    .prep li::marker{color:var(--accent);}
+    .prep li{padding:6px 25px; color:hsl(24, 5%, 18%);}
+    .prep li::marker{color:hsl(14, 45%, 36%);}
 
     h2{
-       color:var(--muted);
+       color:hsl(30, 18%, 87%);
       font-family:"Young Serif",serif;
-      color: var(--accent);
+      color: hsl(14, 45%, 36%);
       font-weight:400;
-      font-size: clamp(24px, 3.5vw, 32px);
+      font-size: 25px;
       margin: 0 0 12px;
     }
 
@@ -80,20 +72,20 @@ section div:nth-of-type(5) {
     }
     ul.ingredients li,
     ol.instructions li{
-        color:var(--text);
+        color:hsl(24, 5%, 18%);
       padding: 7px 17px;
     }
-    ul.ingredients li::marker{color:var( --accent);}
+    ul.ingredients li::marker{color:hsl(14, 45%, 36%);}
     ol.instructions li::marker{
       font-weight:700;
-      color: var( --accent);
+      color: hsl(14, 45%, 36%);
     }
     ol.instructions b{font-weight:700 solid;}
 
     hr{
       border:0;
       height:1px;
-      background:var(--rule);
+      background:hsl(30, 18%, 87%);
       margin: 22px 0;
     }
 
