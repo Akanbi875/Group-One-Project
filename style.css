@@ -35,3 +35,78 @@ p {
     font-size: 16px;
     line-height: 1.6;
 }
+
+section div:nth-of-type(3) {
+    border: 1px solid   #fff6f1;
+    background-color:   hsl(330, 100%, 98%);
+    padding: 6px 25px;
+    border-radius: 10px;
+}
+
+section div:nth-of-type(5) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-top: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+th, td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 8px;
+  text-align: left;
+}
+
+table tr td {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+table tr th {
+    font-weight: 400;
+}
+
+table tr:last-child th,
+table tr:last-child td {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .test {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    div {
+        margin: 0 20px;
+    }
+    
+
+    .hero {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero img {
+        border-radius: 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
