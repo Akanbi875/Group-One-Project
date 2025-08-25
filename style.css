@@ -12,7 +12,7 @@ body {
 .test {
     background-color: hsl(0, 0%, 100%);
     width: 50%;
-    max-width: 700px;
+    max-width: 700px;  
     margin: 70px auto;
     padding: 40px;
     border-radius: 14px;
@@ -34,4 +34,120 @@ h1 {
 p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+section div:nth-of-type(5) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-top: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 5px;
+}
+  .prep{
+      background:hsl(330, 100%, 98%);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 26px 0;
+    }
+    .prep h3{
+      margin:0 0 8px;
+      color:hsl(332, 51%, 32%)  ;
+      font-size:20px;
+      font-weight:700;
+    }
+    .prep ul{margin:0; padding-left: 20px;}
+    .prep li{padding:6px 25px; color:hsl(24, 5%, 18%);}
+    .prep li::marker{color:hsl(14, 45%, 36%);}
+
+    h2{
+       color:hsl(30, 18%, 87%);
+      font-family:"Young Serif",serif;
+      color: hsl(14, 45%, 36%);
+      font-weight:400;
+      font-size: 25px;
+      margin: 0 0 12px;
+    }
+
+ ul.ingredients, ol.instructions{
+      padding-left: 22px;
+      margin: 0 0 20px;
+    }
+    ul.ingredients li,
+    ol.instructions li{
+        color:hsl(24, 5%, 18%);
+      padding: 7px 17px;
+    }
+    ul.ingredients li::marker{color:hsl(14, 45%, 36%);}
+    ol.instructions li::marker{
+      font-weight:700;
+      color: hsl(14, 45%, 36%);
+    }
+    ol.instructions b{font-weight:700 solid;}
+
+    hr{
+      border:0;
+      height:1px;
+      background:hsl(30, 18%, 87%);
+      margin: 22px 0;
+    }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+th, td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 8px;
+  text-align: left;
+}
+
+table tr td {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+table tr th {
+    font-weight: 400;
+}
+
+table tr:last-child th,
+table tr:last-child td {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .test {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    div {
+        margin: 0 20px;
+    }
+    
+
+    .hero {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero img {
+        border-radius: 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }
