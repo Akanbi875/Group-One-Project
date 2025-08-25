@@ -1,3 +1,16 @@
+:root{
+      --bg: #f3e5d8;
+      --card: #ffffff;
+      --text: #312e2c;
+      --muted: #6b6b6b;
+      --accent-bg: #fff7fc;
+      --accent: #7b284f;
+      --rule: #e6e6e6;
+      --list-dot: #854632;
+      --corner: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --maxw: 740px;
+    }
 body {
     font-family: "outfit", sans-serif;
     background-color: hsl(30, 54%, 90%);
@@ -72,6 +85,54 @@ table tr:last-child th,
 table tr:last-child td {
     border-bottom: none;
 }
+
+  .prep{
+      background:var(--accent-bg);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 26px 0;
+    }
+    .prep h3{
+      margin:0 0 8px;
+      color:var(--accent);
+      font-size:16.5px;
+      font-weight:700;
+    }
+    .prep ul{margin:0; padding-left: 20px;}
+    .prep li{padding:6px 0; color:var(--text);}
+    .prep li::marker{color:var(--muted);}
+
+    h2{
+       color:var(--muted);
+      font-family:"Young Serif",serif;
+      color: #854632;
+      font-weight:400;
+      font-size: clamp(24px, 3.5vw, 32px);
+      margin: 0 0 12px;
+    }
+
+ ul.ingredients, ol.instructions{
+      padding-left: 22px;
+      margin: 0 0 20px;
+    }
+    ul.ingredients li,
+    ol.instructions li{
+        color:var(--muted);
+      padding: 7px 0;
+    }
+    ul.ingredients li::marker{color:var(--list-dot);}
+    ol.instructions li::marker{
+      font-weight:700;
+      color: var(--list-dot);
+    }
+    ol.instructions b{font-weight:700 solid;}
+
+    hr{
+      border:0;
+      height:1px;
+      background:var(--rule);
+      margin: 22px 0;
+    }
 
 @media screen and (max-width: 575px) {
     body {
