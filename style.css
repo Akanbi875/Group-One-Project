@@ -1,0 +1,37 @@
+body {
+    font-family: "outfit", sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    line-height: 1.5;
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+}
+
+.test {
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 40px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;   
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "young serif", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
